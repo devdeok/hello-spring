@@ -24,12 +24,14 @@ public class MemberService {
      * 회원 가입
      */
     public Long join(Member member){
+
         // 중복 회원 검증 후 저장
         // 같은 이름이 있는 중복 회원 X
         validateDuplicateMember(member); // 중복 회원 검증
         // result.orElseGet(); //값이 있으면 꺼내고 값이 없으면 여기 있는 메서드 실행
         memberRepository.save(member);
         return member.getId();
+
     }
 
     private void validateDuplicateMember(Member member) {

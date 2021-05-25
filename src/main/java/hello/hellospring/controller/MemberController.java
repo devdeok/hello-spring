@@ -18,6 +18,7 @@ public class MemberController {
     @Autowired // spring container에서 member service를 가져옴
     public MemberController(MemberService memberService) {
         this.memberService = memberService;
+        System.out.println("memberService = " + memberService.getClass());
 
     }
     @GetMapping("/members/new")
