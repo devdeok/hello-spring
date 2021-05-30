@@ -2,8 +2,8 @@
 
 ## 환경
 - 언어 : Java
-- IDE : Intellij
-- DB : H2
+- IDE  : Intellij
+- DB   : H2
 
 ## 회원 관리 예제 - 백엔드 개발
 - 회원 도메인과 리포지토리 만들기
